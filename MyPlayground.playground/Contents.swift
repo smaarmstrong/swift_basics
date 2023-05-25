@@ -69,3 +69,42 @@ var type_is_complete: Bool = false
 type_is_complete = true
 
 // only include the type when initializing or declaring a var, let, or static
+
+// FUNCTIONS AND PARAMETERS
+
+func first_function() {
+    
+}
+
+func add_two_numbers(a: Int, b: Int) -> Int {
+   return a + b
+}
+
+var pig = 3
+var cow = 3
+
+let total_animals = add_two_numbers(a: pig, b: cow)
+print(total_animals)
+
+func square_number(number: Int) -> Int {
+    return number * number
+}
+
+let squared_animals = square_number(number: total_animals)
+print(squared_animals)
+
+func log() {
+    
+}
+
+log()
+
+func is_even(number: Int) -> Bool {
+    if number % 2 == 0 {
+        return true
+    }
+    return false
+}
+
+is_even(number: 3)
+is_even(number: 2)
