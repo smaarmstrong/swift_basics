@@ -108,3 +108,46 @@ func is_even(number: Int) -> Bool {
 
 is_even(number: 3)
 is_even(number: 2)
+
+// Classes and Structs
+
+class Vehicle {
+    let wheels: Int = 4
+}
+
+class Car: Vehicle {
+    var make: String = ""
+    var color: String = ""
+    
+    init(make: String, color: String) {
+        self.make = make
+        self.color = color
+    }
+}
+
+var british: Car = Car(make: "bentley", color: "olive")
+var british2 = Car(make: "sunbeam", color: "red")
+var british3 = british
+
+// note that british3 is just a reference/shallow copy
+print(british.make, british3.make)
+british3.make = "sunbeam"
+print(british.make, british3.make)
+
+struct Truck {
+    var make: String = ""
+    var color: String = ""
+    
+    init(make: String, color: String) {
+        self.make = make
+        self.color = color
+    }
+}
+
+var japanese: Truck = Truck(make: "toyota", color: "black")
+var japanese2 = japanese
+
+// note that japanese2 is a deep copy
+print(japanese.make, japanese2.make)
+japanese2.make = "ford"
+print(japanese.make, japanese2.make)
