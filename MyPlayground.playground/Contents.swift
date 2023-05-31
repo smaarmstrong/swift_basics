@@ -151,3 +151,19 @@ var japanese2 = japanese
 print(japanese.make, japanese2.make)
 japanese2.make = "ford"
 print(japanese.make, japanese2.make)
+
+// Loops
+
+let for_array = [1, 2, 3, 4, 5, 6]
+
+for thing in for_array {
+   let result = thing * 2
+    print(result)
+}
+
+var while_counter = 0
+
+while while_counter <= 3 {
+   print(while_counter)
+   while_counter += 1
+}
