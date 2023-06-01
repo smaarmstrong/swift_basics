@@ -167,3 +167,40 @@ while while_counter <= 3 {
    print(while_counter)
    while_counter += 1
 }
+
+// Optionals
+
+var not_optional_name: String = "Wooster"
+// not_optional_name = nil -- error because "nil" is not a String
+// so what do?
+
+// add a question mark to make an Optional
+var optional_name: String? = "Jeeves"
+optional_name = nil
+
+var optional_x: Int? = 3
+var optional_y: Int? = 12
+
+// you can't perform operations on optionals
+// var not_optional_result = optional_x + optional_y ERROR
+// think of optional values as wrapped in an impenetrable box
+
+// so you have to "unwrap" optionals out of their "boxed" status
+// what do?
+// unwrap with if-statements
+
+if let optional_value = optional_x {
+
+    if let optional_value2 = optional_y {
+        let optional_result = optional_value + optional_value2
+        print(optional_result)
+    }
+    
+}
+
+// some more stuff to present how optionals are their own type
+var optional_price: Double? = nil
+print(optional_price)
+optional_price = 1.23
+print(optional_price)
+type(of: optional_price)
