@@ -204,3 +204,13 @@ print(optional_price)
 optional_price = 1.23
 print(optional_price)
 type(of: optional_price)
+
+// Conditionals
+var conditional_x = 42
+if conditional_x > 10 && conditional_x < 20{
+    
+} else if conditional_x > 20 || conditional_x < 0 {
+    
+} else {
+    
+}
